@@ -123,12 +123,17 @@ set tm=500
 " Enable syntax highlighting
 syntax enable 
 
-"""" fang added to enable macox syntax
-set term=xterm
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"fang added to enable macox syntax
+set term=builtin_ansi
 syntax on
+set number
+autocmd BufRead,BufNewFile *.m syntax on "let nerdtree have syntax
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 colorscheme desert
-set background=black
+set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -397,4 +402,7 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
+set colorcolumn=72
+
 
