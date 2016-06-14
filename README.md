@@ -1,8 +1,8 @@
-This is my vim setup files. It includes all the plugins, as well as the .vimrc file.
+This is some files to personalize your vim. It includes some plugins, as well as a .vimrc file.
 
-To use it, simply mv the .vimrc file as ~/.vimrc, and put all the rest files in the folder "~/.vim/".
+To install, simply move (mv) the .vimrc file as ~/.vimrc, and put all other files in the directory of "~/.vim/".
 
-The plugins include the "nerdtree", and some other plugins which I couldn't remember exactly...
+The plugins include the "nerdtree", "matlab syntax" and some other plugins which I couldn't remember exactly...
 
 Thanks for your interest! :P
 
